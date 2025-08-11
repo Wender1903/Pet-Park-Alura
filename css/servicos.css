@@ -18,6 +18,11 @@
     gap: var(--gap-m);
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+        height: 300px;
+        justify-content: space-around;
+    }
 }
 
 .servicos-lista>li>.link {
@@ -64,7 +69,7 @@
     background-image: url('../assets/icones/petsiter.png');
 }
 
-.servicos-lista > li > .link:hover {
+.servicos-lista>li>.link:hover {
     transform: scale(1.03);
     transition: transform 0.3s ease-in;
     padding-left: var(--padding-xxl);
